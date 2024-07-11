@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="This is a personal site">
+
+  <title>Michael's Personal Site</title>
+  <meta content="my portfolio" name="description">
+  <meta content="portfolio" name="keywords">
+
+  <!-- Favicons -->
+  <link href="data:image/png;base64,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" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/mypic.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Michael Chilaka</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/profile.php?id=100071198124462&mibextid=rS40aB7S9Ucbxw6v " class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/michaelchineduchilaka?utm_source=qr&igsh=MTVhNzBrODBsZjU2YQ== " class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/michael-chilaka-250b16294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Michael Chilaka</h1>
+      <p>I'm <span class="typed" data-typed-items="Backend Developer, Microsoft Office Specialist., Database Developer, "></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>As a proficient Backend Developer and a certified Microsoft Office Specialist, I bring a unique blend of technical and administrative skills to the table. My passion for backend development has driven me to master server-side technologies, databases, and APIs, ensuring seamless and efficient application performance. I thrive on solving complex problems, optimizing systems, and creating robust, scalable solutions that drive business success.
+
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/mypic.jpg" class="img-fluid" alt=" picture of me">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Microsoft-Office Specialist &amp; Backend Developer.</h3>
+            <p class="fst-italic">
+              This section contains my personal information, including my date of birth, phone number, and email.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 December 1999</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 81142 46540</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lagos, NIGERIA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Diploma</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>michaelchineduchilaka@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              In addition to my backend development prowess, I am a Microsoft Office Specialist with advanced expertise in Word, Excel, PowerPoint, and other Office applications. This dual skill set allows me to efficiently manage documentation, data analysis, presentations, and communication, enhancing both my productivity and the effectiveness of the teams I collaborate with.
+            
+            Combining my technical acumen with my administrative proficiency, I deliver comprehensive solutions that meet the highest standards of functionality and professionalism.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>This section highlights my skills, including technical proficiencies, Explore to learn more about my capabilities and expertise.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS &amp; Bootstrap <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Node.Js &amp; Express.Js <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Microsoft Office <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p> This section features my resume, detailing my work experience, education, skills, and certifications.</p>
+        </div>
+       
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Michael Chilaka</h4>
+              <p><em>Detail-oriented, organized and meticulous employee. Works at fast pace to meet tight deadlines. Enthusiastic team player ready to contribute to company success.</em></p>
+              <ul>
+                <li>NIGERIA, Unity Bus Stop by Igondo Lagos</li>
+                <li>(234) 81142-46540</li>
+                <li>michaelchineduchilaka@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>DIPLOMA IN INFORMATION TECHNOLOGY  </h4>
+              <h5>2022 - 2024</h5>
+              <p><em>NATIONAL INSTITUTION OF INFORMATION TECHNOLOGY</em></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>PYTHON INSTRUCTOR IN FORTESOFT SYSTEMS</h4>
+              <h5>2024 - Present</h5>
+              <p><em>Surulere, Lagos, Nigeria </em></p>
+              <ul>
+                <li>Lead in the python, projects, and implementation of the python, basic, and the python GUI method</li>
+                <li>Supervise the assessment of all students in order to ensure quality and accuracy of the project</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>MICROSOFT OFFICES SPECIALIST IN NATIONAL INSTITUTION OF INFORMATION TECHNOLOGY</h4>
+              <h5>2023 - 2024</h5>
+              <p><em>Surulere, Lagos, Nigeria</em></p>
+              <ul>
+                <li>Developed numerous programs (presentations, and documentations).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate PowerPoint presentations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Welcome to my portfolio! I'm Michael, a passionate Backend Developer and Microsoft Office Specialist with a focus on delivering innovative solutions and enhancing productivity.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-presentations">Presentations</li>
+              <li data-filter=".filter-documentation">Documents</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/site1.PNG" class="img-fluid" alt="picture of my first site">
+              <div class="portfolio-links">
+                <a href="https://mellifluous-unicorn-f9b9f3.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-documentation">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/doc1.PNG" class="img-fluid" alt="picture of my first document">
+              <div class="portfolio-links">
+                <a href="aboy5.pdf" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/site2.PNG" class="img-fluid" alt="picture of my second site">
+              <div class="portfolio-links">
+                <a href="https://lovely-daifuku-3e0b4d.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-presentations">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pre1.PNG" class="img-fluid" alt="picture of my first presentation">
+              <div class="portfolio-links">
+                <a href="CHURCHdesign1.pdf" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-documentation">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/doc2.PNG" class="img-fluid" alt="picture of my second document">
+              <div class="portfolio-links">
+                <a href="1NIGERIANPROBLEM.pdf" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-presentations">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pre2.PNG" class="img-fluid" alt="picture of my second presentation">
+              <div class="portfolio-links">
+                <a href="SQLPRESENTATIONGROUP1.pdf" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/site3.PNG" class="img-fluid" alt="picture of my third site">
+              <div class="portfolio-links">
+                <a href="https://moonlit-arithmetic-1cb3e7.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-documentation">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/doc3.PNG" class="img-fluid" alt="picture of my third document">
+              <div class="portfolio-links">
+                <a href="quotation1.pdf" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Offering customized backend development and Microsoft Office solutions, ensuring seamless integration and top-notch support for your business.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a >Professional Development</a></h4>
+            <p class="description">Investing in professional development not only enhances individual capabilities but also contributes to organizational success by fostering innovation, adaptability, and leadership.</p>
+              
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a >Task Management</a></h4>
+            <p class="description">Effective task management enhances productivity, reduces stress, and helps achieve objectives systematically and efficiently.</p>
+              
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a >Growth Tracking</a></h4>
+            <p class="description">Effective growth tracking enables continuous improvement, accountability, and informed decision-making.
+            </p>
+              
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a >Scope Management</a></h4>
+            <p class="description">Effective scope management helps prevent project overruns, ensures alignment with stakeholder expectations, and enhances project success by focusing efforts on delivering agreed-upon deliverables within defined constraints.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a >Brightness</a></h4>
+            <p class="description">Effective brightness management in workplaces contributes to employee well-being, productivity, and overall operational efficiency by creating conducive and visually comfortable work environments.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a >Calendar</a></h4>
+            <p class="description">Work calendars are essential tools for enhancing productivity, facilitating collaboration, and ensuring effective time management in professional settings.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Welcome to my Testimonials section! Here, you can read what my supervisor's , manager , instructor and colleagues have to say about their experiences working with me. These testimonials highlight my commitment to excellence, reliability, and the quality of my work. We hope these endorsements give you confidence in choosing me for your next project.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Michael is always reliable and dedicated, ensuring that deadlines are met with precision and the highest standards. His problem-solving skills and meticulous attention to detail have been invaluable.and I am always confident in the success of our collaborative efforts.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/flaz.jpg" class="testimonial-img" alt="testimonial image">
+                <h3>FAISAL</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Working with Michael has been an absolute pleasure. As a frontend developer, I have come to rely on his incredible commitment to our projects. Michael's expertise as a backend developer and Microsoft Office specialist has consistently proven invaluable.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/front1.jpg" class="testimonial-img" alt="testimonial image">
+                <h3>Luciana</h3>
+                <h4>Developer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Michael is an outstanding tech professional with a wide range of technical skills. He is passionate about his Job and always strives to do his best. Michael is a valuable team member and a supportive mentor. his dedication and talent what makes him unique.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/olo1.jpg" class="testimonial-img" alt="">
+                <h3>Miss Oloma</h3>
+                <h4>Supervisor</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Michael is a great student with a real passion for programming. Even when things got tough, Michael’s dedication never wavered. As his instructor, I’m proud to have taught such a talented and determined individual. His hard work and enthusiasm are truly inspiring.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/uzor.jpg" class="testimonial-img" alt="">
+                <h3>Ebebe Uzor</h3>
+                <h4>Developer &amp; Instructor</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Michael is an exceptional backend developer and Microsoft specialist. His expertise and commitment to excellence are truly outstanding. It's always a pleasure collaborating with someone as dedicated and talented as Michael. He is a very amazing guy
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/akin.jpg" class="testimonial-img" alt="">
+                <h3>Akin Taylor</h3>
+                <h4>Senior Developer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Welcome to my contact section. Feel free to reach out to me for any inquiries, collaborations, or just to connect. I'm looking forward to hearing from you!</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Igondo Lagos Nigeria</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>michaelchineduchilaka@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+234 81142 46540</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253747.6851986237!2d3.000158491015626!3d6.548076865847529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b95f167f9fbb9%3A0xc7fbbd0ea29c5a1f!2sIgondu%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1689001274564!5m2!1sen!2sus"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+ 
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            
+
+            <div class="col-sm-12 text-center mb-3">
+              <a class="btn btn-primary"  href="https://mail.google.com/mail/?view=cm&fs=1&to=michaelchineduchilaka@gmail.com" target="_blank">Send me an email</a>
+
+              
+              
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Michael</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
